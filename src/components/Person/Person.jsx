@@ -3,7 +3,7 @@ import './Person.scss';
 export const Person = ({ person }) => {
   const { name, age, sex, isMarried, partnerName } = person;
 
-  const kindOfSex = sex === 'f' ? 'husband' : 'wife';
+  const kindOfSex = sex === 'm' ? 'wife' : 'husband';
 
   const isPartner = isMarried ? (
     <p className="Person__partner">{`${partnerName} is my ${kindOfSex}`}</p>
